@@ -1,0 +1,24 @@
+{
+  "name": "ra-language-chinese-traditional",
+  "version": "1.0.0",
+  "description": "Traditional chinese translations for React-admin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areyliu6/ra-language-chinese-traditional.git"
+  },
+  "keywords": [
+    "react",
+    "react-admin",
+    "translation"
+  ],
+  "author": "Arey Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/areyliu6/ra-language-chinese-traditional/issues"
+  },
+  "homepage": "https://github.com/areyliu6/ra-language-chinese-traditional#readme"
+}
