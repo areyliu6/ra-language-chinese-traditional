@@ -1,4 +1,4 @@
-# Chinese Messages for React-Admin
+# Traditional chinese Messages for React-Admin
 
 Chinese messages for [react-admin](https://github.com/marmelab/react-admin), the frontend framework for building admin applications on top of REST/GraphQL services.
 
