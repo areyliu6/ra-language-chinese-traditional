@@ -18,8 +18,10 @@ module.exports = {
             back: '退回',
             bulk_actions: '選中%{smart_count}項',
             export: '輸出',
-            search: '檢索',
+            search: '搜尋',
             show: '顯示',
+            clone: '複製',
+            confirm: '確認',
         },
         boolean: {
             true: '是',
@@ -37,14 +39,15 @@ module.exports = {
         },
         input: {
             file: {
-                upload_several: '將文件集合拖拽到這裡, 或點擊這裡選擇文件集合.',
-                upload_single: '將文件拖拽到這裡, 或點擊這裡選擇文件.',
+                upload_several:
+                    '將多文件拖至此上傳，或點擊選取所有需要上傳的文件',
+                upload_single: '將文件拖至此上傳, 或點擊這裡選取文件',
             },
             image: {
                 upload_several:
-                    '將圖片文件集合拖拽到這裡, 或點擊這裡選擇圖片文件集合.',
+                    '將多圖片拖至此上傳，或點擊選取所有需要上傳的圖片',
                 upload_single:
-                    '將圖片文件拖拽到這裡, 或點擊這裡選擇圖片文件.',
+                    '將圖片拖至此上傳, 或點擊這裡選取圖片',
             },
             references: {
                 all_missing: '未找到參考數據.',
@@ -57,14 +60,17 @@ module.exports = {
         message: {
             yes: '是',
             no: '否',
-            are_you_sure: '您確定操作?',
+            are_you_sure: '您確定?',
             about: '關於',
             not_found:
-                '您輸入了錯誤的URL或者錯誤的鏈接.',
-            loading: '正在加載頁面, 請稍候',
+                '您輸入了錯誤的網址或者錯誤的鏈接.',
+            loading: '頁面讀取中, 請稍候',
             invalid_form: '表單輸入無效. 請檢查錯誤提示',
+            details: '詳細',
             delete_title: '刪除 %{name} #%{id}',
             delete_content: '您確定要刪除該項目?',
+            error:
+                "網頁錯誤，您的請求無法完成",
             bulk_delete_title:
                 '刪除 %{name} |||| 刪除 %{smart_count}項 %{name} ',
             bulk_delete_content:
@@ -73,8 +79,8 @@ module.exports = {
         navigation: {
             no_results: '結果為空',
             no_more_results:
-                '頁碼 %{page} 超出邊界. 試試上一頁.',
-            page_out_of_boundaries: '頁碼 %{page} 超出邊界',
+                '頁碼 %{page} 超出末頁. 試試上一頁.',
+            page_out_of_boundaries: '頁碼 %{page} 超出末頁',
             page_out_from_end: '已到最末頁',
             page_out_from_begin: '已到最前頁',
             page_range_info: '%{offsetBegin}-%{offsetEnd} / %{total}',
@@ -100,13 +106,14 @@ module.exports = {
             canceled: '取消動作',
             data_provider_error: 'dataProvider錯誤. 請檢查console的詳細信息.',
             canceled: '取消動作',
+            logged_out: '已登出，請重新登入',
         },
         validation: {
             required: '必填',
-            minLength: '必須不少於 %{min} 個字',
-            maxLength: '必須不多於 %{max} 個字',
-            minValue: '必須不小於 %{min}',
-            maxValue: '必須不大於 %{max}',
+            minLength: '最少 %{min} 個字',
+            maxLength: '最多 %{max} 個字',
+            minValue: '必須大於 %{min}',
+            maxValue: '必須小於 %{max}',
             number: '必須為數字',
             email: '必須是有效的郵箱',
             oneOf: '必須為: %{options}其中一項',
